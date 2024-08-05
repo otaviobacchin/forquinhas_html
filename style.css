@@ -1,0 +1,62 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #111419;
+    color: white;
+    font-family: "Roboto Mono", monospace;
+    font-optical-sizing: auto;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+.topo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px; /* Ajuste conforme necessário */
+    font-family: "Bona Nova SC", serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 2.5em;
+}
+
+.centro {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#palavra {
+    font-size: 3em; /* Ajuste este valor conforme necessário */
+    font-weight: bold; /* Adiciona negrito ao texto, se desejado */
+    margin: 20px 0; /* Espaçamento em torno do texto */
+}
+
+.base {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 200px; /* Ajuste conforme necessário */
+}
+
+.titulo-imagem {
+    width: 150px; /* Ajuste este valor conforme necessário */
+    height: auto;
+    max-width: 100%;
+    object-fit: contain; /* ou use cover dependendo do que você preferir */
+}
+
+input, button {
+    margin: 10px;
+}

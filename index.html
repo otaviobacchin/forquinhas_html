@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forquinhas</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bona+Nova+SC:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bona+Nova+SC:ital,wght@0,400;0,700;1,400&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="topo">
+            <img src="imagens/loucasbg2.png" alt="Título do Jogo" class="titulo-imagem">
+            <h1>Forquinhas</h1>
+        </div>
+        <div class="centro">
+            <p id="palavra"></p>
+        </div>
+        <div class="base">
+            <input type="text" id="letra-input" maxlength="1" placeholder="Letra" autocomplete="off">
+            <button id="chutar-btn">Chutar</button>
+            <p id="mensagem"></p>
+            <p id="tentativas"></p>
+            <p id="letras-erradas"></p>
+            <button id="reiniciar-btn" style="display:none;">Jogar Novamente</button>
+            <button id="mute-btn">🔊</button>
+        </div>
+    </div>
+    <audio id="audio-inicio" src="audios/paiebonitoempqp.mp3" autoplay></audio>
+    <audio id="audio-vitoria"></audio>
+    <audio id="audio-derrota"></audio>
+    <script src="script.js"></script>
+</body>
+</html>
