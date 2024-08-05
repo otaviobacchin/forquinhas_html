@@ -60,3 +60,63 @@ body {
 input, button {
     margin: 10px;
 }
+
+/* Media queries para telas menores */
+@media (max-width: 768px) {
+    body {
+        flex-direction: column;
+        justify-content: flex-start;
+        padding-top: 20px;
+        height: auto;
+    }
+
+    .topo {
+        margin-top: 10px;
+        font-size: 2em;
+    }
+
+    .titulo-imagem {
+        width: 100px; /* Ajuste conforme necessário */
+    }
+
+    #palavra {
+        font-size: 2em; /* Ajuste para telas menores */
+    }
+
+    input, button {
+        width: 90%;
+        margin: 5px auto;
+        padding: 10px;
+        font-size: 1em;
+    }
+
+    #mensagem, #tentativas, #letras-erradas {
+        font-size: 1em;
+    }
+}
+
+/* Media queries para telas muito pequenas */
+@media (max-width: 480px) {
+    .topo {
+        margin-top: 5px;
+        font-size: 1.5em;
+    }
+
+    .titulo-imagem {
+        width: 80px; /* Ajuste conforme necessário */
+    }
+
+    #palavra {
+        font-size: 1.5em; /* Ajuste para telas muito pequenas */
+    }
+
+    input, button {
+        width: 100%;
+        padding: 8px;
+        font-size: 0.9em;
+    }
+
+    #mensagem, #tentativas, #letras-erradas {
+        font-size: 0.9em;
+    }
+}
